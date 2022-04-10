@@ -6,8 +6,8 @@ Bayesian force inference in epithelial tissue
 
 This is a script for performing force inference in epithelial mechanics, proposed in [1] and [2].
 
-Likelihood is accounted by force balance equations among cell membrane junctions and cell pressures at vertices.
-Prior is given by the expectation that membrane tensions is positive and uniform. Then the tensions and pressures
+Likelihood is accounted by force balance equations among cell membrane tensions and cell pressures at vertices.
+Prior is given by the expectation that membrane tensions are positive and uniform. Then the tensions and pressures
 are inferred by MAP estimation. Empirical Bayes method is adopted where hyper-parameters are determined to minimize
 ABIC.
 
