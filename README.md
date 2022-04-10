@@ -21,7 +21,7 @@ See [1] and [2] for details.
 ## Usage
 
 1. Prepare an input file in the same format as the attached sample (Sample/sample/).
-2. Change the variable "filename" in EBayes.py to the input file in step 1.
+2. Change the variable "filename" in Forceinf.py to the input file in step 1.
 3. Run Forceinf.py on IDE or IPython.
 
 ## Licence
