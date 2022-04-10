@@ -34,6 +34,6 @@ See [1] and [2] for details.
 "Bayesian inference of force dynamics during morphogenesis" <br>
 Journal of Theoretical Biology 313, p.201-211 (2012)
 
-2. S Ishihara, K Sugimura, SJ Cox, Isabelle Bonnet, Y Bellaïche, F Graner <br>
+2. S Ishihara, K Sugimura, SJ Cox, I Bonnet, Y Bellaïche, F Graner <br>
 Comparative study of non-invasive force and stress inference methods in tissue <br>
 The European Physical Journal E 36, p.1-13 (2013)
