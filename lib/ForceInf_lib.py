@@ -29,7 +29,7 @@ class EDGE:
 class CELL:
     def __init__(self):
         self.jnum = 0
-        self.junc = np.empty(0,dtype = np.int32)
+        self.junc = np.empty(0,dtype = np.int64)
         self.in_out = 'N'
         self.edge = []
         self.NON_EDGE = np.nan
@@ -81,9 +81,9 @@ def loaddata(filename,CHECK = False):
     stl = 0
     R_NUM=0
     CELL_NUMBER, E_NUM, V_NUM, INV_NUM = 0, 0, 0, 0
-    RndV = np.empty(0, dtype = np.int32)
-    RndE = np.empty(0, dtype = np.int32)
-    RndC = np.empty(0, dtype = np.int32)
+    RndV = np.empty(0, dtype = np.int64)
+    RndE = np.empty(0, dtype = np.int64)
+    RndC = np.empty(0, dtype = np.int64)
     title = ''
 
     for line in open(filename, 'r'):
@@ -167,7 +167,7 @@ def loaddata(filename,CHECK = False):
                 if cid >= len(cell):  assert('cell Number is larger than expected')
                 cell[cid].jnum = int(itemList[1])
                 for i in range(cell[cid].jnum):
-                    cell[cid].junc = np.append( cell[cid].junc, np.int32(itemList[i+3]) )
+                    cell[cid].junc = np.append( cell[cid].junc, np.int64(itemList[i+3]) )
 
                 if 'Ext' in line:  # IDs of cells at boundary
                     cid = int(itemList[0].replace('C[','').replace(']','') )
@@ -235,9 +235,9 @@ def GetMatrix_ForceEstimation(x,y,edge,cell,E_NUM,CELL_NUMBER,R_NUM,INV_NUM,Rnd,
     #RndE = Rnd[1,:]
     #RndC = Rnd[2,:]
 
-    RndJ = np.array(Rnd[0],np.int)
-    RndE = np.array(Rnd[1],np.int)
-    RndC = np.array(Rnd[2],np.int)
+    RndJ = np.array(Rnd[0],int)
+    RndE = np.array(Rnd[1],int)
+    RndC = np.array(Rnd[2],int)
 
     C_NUM = 2*(INV_NUM);       # 条件数
     X_NUM = E_NUM+CELL_NUMBER; # 未知変数
