@@ -110,7 +110,8 @@ def getTP_by_EBayses(MM,V,B,G,HParameter_Number,X_NUM,C_NUM,E_NUM,CELL_NUMBER):
     pargs = ( HParameter_Number, UN, NKM, sSa, sSb0 )
 
     print('# === starf fmin. ===')
-    print('#     scipy.optimize.minize_salr method = \'brent\' ')
+    print('#     scipy.optimize.minize_salr method = \'bounded\' ')
+    #print('#     scipy.optimize.minize_salr method = \'brent\' ')
     start = time.time()
     
     res = minimize_scalar( get_ABIC_for_fmin,  args=pargs, bounds= (0,10), method='bounded', tol=1e-2)
