@@ -24,9 +24,6 @@ See [1] and [2] for details.
 2. Change the variable "filename" in Forceinf.py to the input file in step 1.
 3. Run Forceinf.py on IDE or IPython.
 
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
 ## References
 
