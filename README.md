@@ -11,7 +11,7 @@ Prior is given by the expectation that tensions are positive. Then the tensions 
 are inferred by MAP estimation. Empirical Bayes method is adopted where hyper-parameters are determined to minimize
 ABIC.
 
-If the distance was smaller than three pixels in length, the edge was regarded as a four-way vertex. 
+If the distance between connected vertices is smaller than three pixels in length, the edge is regarded as a four-way vertex. 
 
 See [1] and [2] for details.
 
